@@ -1,4 +1,4 @@
-
+Blogging From The Command Line
 <style>
    body {margin: 5% auto; background: #f2f2f2; color: #444444; font-family: 'Courier new'; font-size: 14px; line-height: 1.6; text-shadow: 0 1px 0 #ffffff; max-width: 73%;}
    code {background: white;}
@@ -6,4 +6,9 @@
    a:hover {border-bottom: 0;}
    h1, h2 {line-height: 1.3;}
 </style>
-
+<style>
+ IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+</style>
