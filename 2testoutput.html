@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+  
+  <style>
+     body {margin: 5% auto; background: #002b36; color: #eee8d5; font-family: 'Courier new'; font-size: 14px; line-height: 1.6; text-shadow: 0 0px 0 #002b36; max-width: 73%;}
+     code {background: #073642;}
+     a {border-bottom: 1px solid #444444; color: #444444; text-decoration: none;}
+     a:hover {border-bottom: 0;}
+     h1, h2 {line-height: 1.3;}
+  </style>
+</head>
+<body>
+<h1 id="this-is-a-test-file">This is a Test File</h1>
+<h2 id="about">About</h2>
+<p>This file is a test file for markdown to examine how pandocs works. Pandocs converts simple text file into PDF, HTML, ODT, or even DOC files. This will be useful for easy document creation, hopefully even with limited knowledge of the document language!</p>
+<h2 id="test-one">Test One</h2>
+<p>The first test will be to convert from a markdown text file (this file) into html. Eventually we will see how many complex layouts and interops we can do, but for now we just want to display a simple webpage-like document. It will be read in a browser and is therefore incredibly portable!</p>
+<p>If I want to include a code snippet I can use code blocks:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">myVector &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;A&quot;</span>,<span class="st">&quot;B&quot;</span>,<span class="st">&quot;C&quot;</span>)
+myDF &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">10</span>,<span class="dv">3</span>,<span class="dv">5</span>)</code></pre></div>
+<p>Here's some code I like to add to the <code>&lt;head&gt;</code> section of the document:</p>
+<div class="sourceCode"><pre class="sourceCode html"><code class="sourceCode html">  <span class="kw">&lt;style&gt;</span>
+   body <span class="kw">{margin:</span> <span class="dt">5%</span> <span class="dt">auto</span><span class="kw">;</span> <span class="kw">background:</span> <span class="dt">#f2f2f2</span><span class="kw">;</span> <span class="kw">color:</span> <span class="dt">#444444</span><span class="kw">;</span> <span class="kw">font-family:</span> <span class="st">&#39;Courier new&#39;</span><span class="kw">;</span> <span class="kw">font-size:</span> <span class="dt">14px</span><span class="kw">;</span> <span class="kw">line-height:</span> <span class="dt">1.6</span><span class="kw">;</span> <span class="kw">text-shadow:</span> <span class="dt">0</span> <span class="dt">1px</span> <span class="dt">0</span> <span class="dt">#ffffff</span><span class="kw">;</span> <span class="kw">max-width:</span> <span class="dt">73%</span><span class="kw">;}</span>
+   code <span class="kw">{background:</span> <span class="dt">white</span><span class="kw">;}</span>
+   a <span class="kw">{border-bottom:</span> <span class="dt">1px</span> <span class="dt">solid</span> <span class="dt">#444444</span><span class="kw">;</span> <span class="kw">color:</span> <span class="dt">#444444</span><span class="kw">;</span> <span class="kw">text-decoration:</span> <span class="dt">none</span><span class="kw">;}</span>
+   a<span class="dv">:hover</span> <span class="kw">{border-bottom:</span> <span class="dt">0</span><span class="kw">;}</span>
+   h1, h2 <span class="kw">{line-height:</span> <span class="dt">1.3</span><span class="kw">;}</span>
+  <span class="kw">&lt;/style&gt;</span></code></pre></div>
+<p>This will make the document a little better looking and more readable. I'll have to investigate the pandoc documentation to see if I can automatically fit that in when converting the document!</p>
+<h3 id="update-on-auto-styling">Update on auto styling</h3>
+<p>I was able to include styling in my document by writing the html I wanted to include in a new document, which I named styles.css.</p>
+<p>Then I called pandoc using the <code>-H</code> flag, with the styles.css file as the argument. The full command looked like this: <code>pandoc pandocs_test.md -s -H styles.css -o testoutput.html</code></p>
+<p>Here's an image: <img src="/home/brian/Downloads/FLWR.jpg" title="title" alt="alt text" style="display: block; width: 73%; margin: auto;" /></p>
+<p>Same image:</p>
+<div class="figure">
+<img src="/home/brian/Downloads/FLWR.jpg" style="width:73.0%" />
+
+</div>
+<h3 id="i-also-made-a-solarized-version">I also made a solarized version!</h3>
+<p><a href="./2testoutput.html">Click here to see the solarized version.</a> <a href="./testoutput.html">Click here to see the original version</a></p>
+</body>
+</html>
